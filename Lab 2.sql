@@ -61,6 +61,16 @@ SELECT name, salary
 FROM Employee
 WHERE name LIKE '%A%' OR name LIKE '%S%'; --name e A or S thakle e print hobe
 
+--salary decendng order e shajanor jonno
+SELECT name, salary
+FROM Employee
+ORDER BY salary DESC; 
+
+--salary Acending order e shajanor jonno (by default o acending a e thake)
+SELECT name, salary
+FROM Employee
+ORDER BY salary ASC; 
+
 
 
 
