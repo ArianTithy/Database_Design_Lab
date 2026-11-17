@@ -1,6 +1,6 @@
 --CREATE DATABASE SEUBD
 
---Create Department
+--Create Department table
 CREATE TABLE Department (
   dept_id INT PRIMARY KEY,
   dept_name VARCHAR(50),
@@ -16,7 +16,7 @@ INSERT INTO Department
 (3, 'Finance', 'Chittagong', 600000),
 (4, 'Marketing', 'Dhaka', NULL);
 
---Create Employee
+--Create Employee table
 CREATE TABLE Employee (
   emp_id INT PRIMARY KEY,
   name VARCHAR(50),
@@ -34,3 +34,34 @@ INSERT INTO Employee (emp_id, name, salary, dept_id) VALUES
 (104, 'Rina', 65000, 2),
 (105, 'Karim', NULL, 4),
 (106, 'Jamil', 50000, 3);
+
+-- * deowa mane shob attribute show korbe
+SELECT*
+FROM employee
+
+SELECT name, salary  --Akhon just name r salary show korbe; SELECT* dile shob show korto
+FROM Employee
+WHERE salary > 55000; --55000 er beshi jader salary tadr show korbe
+
+SELECT name, salary
+FROM Employee
+WHERE name = 'Arif';
+
+--Find employee name starting with A or S
+SELECT name, salary
+FROM Employee
+WHERE name LIKE 'A%' OR name LIKE 'S%';
+
+--Find employee name starting with A or S
+SELECT name, salary
+FROM Employee
+WHERE name LIKE '%A' OR name LIKE '%S';
+
+SELECT name, salary
+FROM Employee
+WHERE name LIKE '%A%' OR name LIKE '%S%'; --name e A or S thakle e print hobe
+
+
+
+
+
