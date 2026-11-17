@@ -72,6 +72,25 @@ FROM Employee
 ORDER BY salary ASC; 
 
 
-
+--Lab Work
+--Show all columns from Employee.
+SELECT*
+FROM employee
+-- Find employees with a salary less than 60000.
+SELECT name, salary  
+FROM Employee
+WHERE salary < 60000
+-- List employees with names containing 'i.
+SELECT*
+FROM Employee
+WHERE name LIKE '%i%' ;
+-- Sort employees by name in ascending order.
+SELECT*
+FROM Employee
+ORDER BY name ASC; 
+-- Find employees with a salary greater than 50000
+SELECT *  
+FROM Employee
+WHERE salary > 50000
 
 
