@@ -16,3 +16,20 @@ CREATE TABLE Book (
   REFERENCES publisher(pub_id)
     );
 
+--2
+INSERT INTO publisher
+(pub_id, pub_name, city, est_year) VALUES
+(1, 'Alo Prokashoni', 'Dhaka', 2005),
+(2, 'Nodi Books', 'Rajshahi', 2012),
+(3, 'Sagor Press', 'Chittagong', 1998),
+(4, 'Pahar Publications', 'Sylhet', NULL);
+INSERT INTO book
+(book_id, title,author, price,stock,pub_id) VALUES
+(201, 'Database Basics', 'Rahim', 450,20,1),
+(202, 'Learn SQL',' Sadia', 380, 15, 1),
+(203, 'Data Structures', 'Tanvir', 520, NULL ,2),
+(204, 'Python for All', 'Sadia', 300, 30, 3),
+(205, 'Network Guide', 'Mahin', NULL, 10 ,4),
+(206,'Algorithm Design',' Tanvir', 600, 5, 20),
+(207,' Web Development',' Nusrat', 350, 25, 3),
+(208,' Operating System', 'Rahim', 480, 12, 40;
