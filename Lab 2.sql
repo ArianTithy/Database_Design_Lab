@@ -71,7 +71,28 @@ SELECT name, salary
 FROM Employee
 ORDER BY salary ASC; 
 
+--DAY 3
+--Find departments with budgets between 500000 and 700000.
+SELECT * FROM `department` 
+WHERE budget BETWEEN 500000 AND 700000; 
 
+--Find employees with dept_id in (2, 3).
+SELECT * FROM employee 
+WHERE dept_id IN (2,3);
+
+--Find departments with budgets not between 600000 and 900000.
+SELECT * FROM `department` 
+WHERE budget NOT BETWEEN 600000 AND 900000; 
+
+--Find employees not in dept_id (2, 3).
+SELECT * FROM employee 
+WHERE dept_id NOT IN (2,3);
+
+Find employees with NULL salary.
+SELECT * FROM employee 
+WHERE salary IS NULL;
+
+  
 --Lab Work
 --Show all columns from Employee.
 SELECT*
