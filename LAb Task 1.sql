@@ -61,3 +61,19 @@ SELECT *
 FROM Book
 WHERE pub_id IN (1, 3);
 --10
+SELECT *
+FROM Book
+WHERE stock IS NOT NULL
+ORDER BY stock DESC
+LIMIT 3;
+
+
+
+
+
+
+
+
+
+
+
