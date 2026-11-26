@@ -33,3 +33,31 @@ INSERT INTO book
 (206,'Algorithm Design',' Tanvir', 600, 5, 20),
 (207,' Web Development',' Nusrat', 350, 25, 3),
 (208,' Operating System', 'Rahim', 480, 12, 40;
+--3
+UPDATE Book
+SET price = 400
+WHERE title = 'Learn SQL';
+--4
+DELETE FROM Book
+WHERE stock < 10;
+--5
+ALTER TABLE Book
+ADD language VARCHAR(20);
+--6
+SELECT title, price
+FROM Book
+WHERE price > 400
+ORDER BY price DESC;
+--7
+SELECT *
+FROM Book
+WHERE title LIKE 'D%';
+--8
+SELECT *
+FROM Book
+WHERE price BETWEEN 350 AND 480;
+--9
+SELECT *
+FROM Book
+WHERE pub_id IN (1, 3);
+--10
