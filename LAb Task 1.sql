@@ -41,7 +41,8 @@ UPDATE Book
 SET price = 400
 WHERE title = 'Learn SQL';
 
---4.  The shop stops selling books with stock less than 10. Delete those books.
+--4.  The shop stops selling books with stock less than 10. 
+--Delete those books.
 DELETE FROM Book
 WHERE stock < 10;
 
@@ -49,7 +50,8 @@ WHERE stock < 10;
 ALTER TABLE Book
 ADD language VARCHAR(20);
  
---6. Show the title and price of books that cost more than 400, sorted from highest price to lowest.
+--6. Show the title and price of books that cost more than 400, 
+--sorted from highest price to lowest.
 SELECT title, price
 FROM Book
 WHERE price > 400
